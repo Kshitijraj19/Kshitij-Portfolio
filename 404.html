@@ -2,124 +2,122 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>404 - Abhishek Tyagi</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Coordinate Not Found | Kshitij Raj</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Remixicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" />
+
+  <!-- Three.js for 3D Background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Custom 3D CSS System -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav_logo">Kshitij Raj</a>
+  <!-- Top Viewport Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
 
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list grid">
-                    <li class="nav_item">
-                        <a href="./index.html#home" class="nav_link">
-                            <i class="uil uil-estate nav_icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="./index.html#about" class="nav_link">
-                            <i class="uil uil-user nav_icon"></i> About
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="./index.html#skills" class="nav_link">
-                            <i class="uil uil-file-alt nav_icon"></i> Skills
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="./index.html#qualification" class="nav_link">
-                            <i class="uil uil-graduation-cap nav_icon"></i> Qualifications
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="./index.html#projects" class="nav_link">
-                            <i class="uil uil-scenery nav_icon"></i> Projects
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="./index.html#contact" class="nav_link">
-                            <i class="uil uil-message nav-icon nav_icon"></i> Contact Me
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav_close" id="nav-close"></i>
-            </div>
 
-            <div class="nav_btns">
-                <!-- Change Theme -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
+  <!-- 3D WebGL Background Canvas -->
+  <canvas id="webgl-canvas"></canvas>
 
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <!-- 3D Ambient Lighting, Cyber Grid & Scanline Layers -->
+  <div class="cyber-scanline-ambient"></div>
+  <div class="cyber-grid-overlay"></div>
+  <div class="bg-ambient">
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+  </div>
 
-    <!-- Main -->
-    <main class="main">
-        <section class="home section" id="home">
-            <div class="container">
-                <h1>:(</h1>
-                <br>
-                <h2>
-                    A <span>404</span> error occured! Page not found, check the URL and try again.
-                </h2>
-                <br><br>
-                <h3>
-                    <a class="nav_link" href="./index.html">Return to home</a><br><a class="nav_link" href="javascript:history.back()">Go Back</a>
-                </h3>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer_bg">
-            <div class="footer_container container grid">
-                <div>
-                    <h1 class="footer_title">Abhishek Tyagi</h1>
-                    <span class="footer_subtitle">Frontend Developer</span>
-                </div>
-
-                <ul class="footer_links">
-                    <li>
-                        <a href="./index.html#about" class="footer_link">About</a>
-                    </li>
-                    <li>
-                        <a href="./index.html#projects" class="footer_link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="./index.html#contact" class="footer_link">Contact Me</a>
-                    </li>
-                </ul>
-
-                <div class="footer_socials">
-                    <a href="https://www.linkedin.com/in/thepranaygupta/" target="_blank" class="footer_social">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                    <a href="https://twitter.com/ThePranayGupta/" target="_blank" class="footer_social">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
-                    <a href="https://www.instagram.com/abhityagi2912/" target="_blank" class="footer_social">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                </div>
-            </div>
-
-            <p class="footer_copy">&#169; Kshitij Raj.</p>
+  <!-- Header Navigation -->
+  <header class="header scroll-header" id="header">
+    <nav class="nav container">
+      <a href="./index.html" class="nav-logo" aria-label="Return to homepage">
+        <div class="nav-logo-icon">
+          <img src="./assets/img/icon.png" alt="Kshitij Raj" class="nav-logo-img" />
         </div>
-    </footer>
+        <div class="logo-name-group">
+          <span class="logo-title">Kshitij Raj</span>
+          <span class="logo-sub">Ops & QA Lead</span>
+        </div>
+      </a>
 
-    <script src="./assets/js/404-error.js"></script>
+      <div class="nav-actions">
+        <!-- Audio Feedback Toggle -->
+        <button class="action-btn" id="audio-toggle" aria-label="Toggle Sound" title="Toggle Sound">
+          <i class="ri-volume-mute-line" id="audio-icon"></i>
+        </button>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button class="action-btn theme-toggle" id="theme-button" aria-label="Toggle Theme" title="Toggle Theme">
+          <i class="ri-moon-clear-line" id="theme-icon"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main" style="min-height: 85vh; display: flex; align-items: center; justify-content: center; padding-top: 5rem;">
+    <div class="container" style="text-align: center;">
+      <div class="glass-card" style="padding: 3.8rem 2.5rem; max-width: 620px; margin: 0 auto;" data-tilt>
+        <div class="card-corner corner-tl"></div>
+        <div class="card-corner corner-br"></div>
+        
+        <div class="section-badge-3d" style="margin-bottom: 1.5rem;" data-tilt-layer="20">
+          <i class="ri-error-warning-line"></i>
+          <span>ERROR 404 — MATRIX VOID</span>
+        </div>
+
+        <h1 style="font-size: 5.8rem; font-weight: 900; line-height: 1; margin-bottom: 0.5rem;" class="gradient-text-3d" data-tilt-layer="35">
+          404
+        </h1>
+        
+        <h2 style="font-size: 1.85rem; margin-bottom: 1rem; color: var(--text-primary);" data-tilt-layer="25">
+          Coordinate Not Found
+        </h2>
+        
+        <p style="color: var(--text-secondary); margin-bottom: 2.2rem; font-size: 1.08rem; line-height: 1.65;" data-tilt-layer="20">
+          The requested route was not found or has been relocated to another sector. Return to main orbit to continue.
+        </p>
+
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;" data-tilt-layer="30">
+          <a href="./index.html" class="btn btn-primary btn-3d" data-sound="click">
+            <i class="ri-home-5-line"></i>
+            <span>Return to Orbit (Home)</span>
+            <div class="btn-glow-layer"></div>
+          </a>
+          <button onclick="history.back()" class="btn btn-outline btn-3d" data-sound="click">
+            <i class="ri-arrow-left-line"></i>
+            <span>Go Back</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-copyright">
+        © 2026 Kshitij Raj. Engineered with 3D WebGL & CSS3. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Main 3D JavaScript Engine -->
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

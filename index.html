@@ -2,537 +2,1331 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="https://cdn.bio.link/uploads/profile_pictures/2021-09-01/tE8wirBYKrXgipi0HP0GK69YD9TzfsDY.png" type="image/webp">
-    <link rel="icon" href="https://cdn.bio.link/uploads/profile_pictures/2021-09-01/tE8wirBYKrXgipi0HP0GK69YD9TzfsDY.png" type="image/webp">
-    <meta name="description" content="" />
-    <meta property="og:title" content="Kshitij Raj" />
-    <meta property="og:url" content="https://github.com/kshitijraj19" />
-    <meta property="og:description" content="Kshitij is currently a second year undergrad from India. He is enthusiastic about web development and Open-Source." />
-    <meta property="og:image:secure_url" content="https://cdn.bio.link/uploads/profile_pictures/2021-09-01/tE8wirBYKrXgipi0HP0GK69YD9TzfsDY.png" />
-    <meta property="og:image" content="https://cdn.bio.link/uploads/profile_pictures/2021-09-01/tE8wirBYKrXgipi0HP0GK69YD9TzfsDY.png" />
-    <meta property="profile:username" content="kshitijraj19" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Kshitij Raj" />
-    <meta name="twitter:image" content="https://cdn.bio.link/uploads/profile_pictures/2021-09-01/tE8wirBYKrXgipi0HP0GK69YD9TzfsDY.png" />
-    <meta name="twitter:url" content="https://kshitijraj19.github.io/" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Kshitij Raj</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
-    <script src="https://kit.fontawesome.com/4bf48f78b4.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kshitij Raj — Esports & Event Ops | Gameplay QA Specialist | Project Coordinator</title>
+
+  <meta name="description"
+    content="Official 3D interactive portfolio of Kshitij Raj — BCA undergraduate specializing in Esports & Event Operations, Independent Gameplay QA, Machine Learning, and Project Management." />
+  <meta name="author" content="Kshitij Raj" />
+  <meta name="keywords"
+    content="Kshitij Raj, Esports Operations, Gameplay QA, Project Coordinator, BCA, Free Fire MAX QA, The Esports Club, Python ML, Kolkata" />
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kshitij Raj — 3D Interactive Portfolio" />
+  <meta property="og:description"
+    content="Esports & Event Operations • Gameplay QA Specialist • Project Coordinator • BCA Undergraduate" />
+  <meta property="og:url" content="https://github.com/imkshitijraj" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kshitij Raj — 3D Interactive Portfolio" />
+  <meta name="twitter:description"
+    content="Esports & Event Operations • Gameplay QA Specialist • Project Coordinator" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts: Outfit, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Remixicon for modern high-quality icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" />
+
+  <!-- Three.js for 3D GPU-Accelerated Graphics -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Custom 3D Design System & Animations -->
+  <link rel="stylesheet" href="./assets/css/style.css?v=2.4" />
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav_logo">Kshitij Raj</a>
+  <!-- Top Viewport Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
 
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list grid">
-                    <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">
-                            <i class="uil uil-estate nav_icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#about" class="nav_link">
-                            <i class="uil uil-user nav_icon"></i> About
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#skills" class="nav_link">
-                            <i class="uil uil-file-alt nav_icon"></i> Skills
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#qualification" class="nav_link">
-                            <i class="uil uil-graduation-cap nav_icon"></i> Qualifications
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#projects" class="nav_link">
-                            <i class="uil uil-scenery nav_icon"></i> Projects
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#contact" class="nav_link">
-                            <i class="uil uil-message nav-icon nav_icon"></i> Contact Me
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav_close" id="nav-close"></i>
-            </div>
 
-            <div class="nav_btns">
-                <!-- Change Theme -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
+  <!-- 3D WebGL Background Canvas -->
+  <canvas id="webgl-canvas"></canvas>
 
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <!-- 3D Ambient Lighting, Cyber Grid & Scanline Layers -->
+  <div class="cyber-scanline-ambient"></div>
+  <div class="cyber-grid-overlay"></div>
+  <div class="bg-ambient">
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+  </div>
 
-    <!-- Main -->
-    <main class="main">
-        <!-- Home -->
-        <section class="home section" id="home">
-            <div class="home_container container grid">
-                <div class="home_content grid">
-                    <div class="home_social">
-                        <a href="https://www.linkedin.com/in/kshitijraj19/" class="home_social-icon" target="_blank">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
 
-                        <a href="https://github.com/kshitijraj19" class="home_social-icon" target="_blank">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-
-                        <a href="https://twitter.com/kshitijrajx" class="home_social-icon" target="_blank">
-                            <i class="uil uil-twitter-alt"></i>
-                        </a>
-
-                        <a href="https://www.instagram.com/kshitijraj19/" class="home_social-icon" target="_blank">
-                            <i class="uil uil-instagram"></i>
-                        </a>
-                    </div>
-
-                    <div class="home_img">
-                        <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <mask id="mask0" mask-type="alpha">
-                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-              </mask>
-              <g mask="url(#mask0)">
-                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                <image class="home_blob-img" x="12" y="8" href="./assets/img/icon.png" />
-              </g>
-            </svg>
-                    </div>
-
-                    <div class="home_data">
-                        <h1 class="home_title">Hi, I'm Kshitij</h1>
-                        <h3 class="home_subtitle">I am Python Data Analyist</h3>
-
-                        <p class="home_description">
-                            Open-Source enthusiast and self learner, believes in the power of community.
-                        </p>
-                        <a href="#contact" class="button button--flex">
-              Contact Me
-              <i class="uil uil-message"></i>
-            </a>
-                    </div>
-                </div>
-
-                <div class="home_scroll">
-                    <a href="#about" class="home_scroll-button button--flex">
-                        <i class="uil uil-mouse-alt home_scroll-mouse"></i>
-                        <span class="home_scroll-name">Scroll Down</span>
-                        <i class="uil uil-arrow-down home_scroll-arrow"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- About -->
-        <section class="about section" id="about">
-            <h2 class="section_title">About Me</h2>
-            <span class="section_subtitle">My introduction</span>
-            <div class="about_container container grid">
-                <img src="./assets/img/about.png" alt="" class="about_img" />
-                <div class="about_data">
-                    <p class="about_description">
-                        Hi! 👋 I'm Kshitij Raj, a 18-year-old Tech enthusiast pursuing Bachelor Of Computer Applications. I am a passionate self-learner, Open source enthusiast, exploring and building projects👨‍💻 using various technologies. I am a learning web developer
-                        well versed in HTML, CSS, JavaScript.
-                    </p>
-                    <div class="about_button">
-                        <a download="" href="./assets/pdf/Kshitij-Resume.pdf" class="button button--flex">
-              Resume<i class="uil uil-file-download-alt button_icon"></i>
-            </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section class="skills section" id="skills">
-            <h1 class="section_title">Skills</h1>
-            <span class="section_subtitle">My Technical Skills</span>
-            <div class="skills_container container grid">
-                <!-- Skill Set 1 -->
-                <div class="skill skills_content skills_open">
-                    <div class="skills_header">
-                        <i class="uil uil-arrow skills_icon"></i>
-
-                        <div>
-                            <h1 class="skills_title">Languages</h1>
-                            <span class="skills_subtitle">Languages that I have picked up over the years</span>
-                        </div>
-
-                        <i class="uil uil-angle-down skills_arrow"></i>
-                    </div>
-
-                    <div class="skills_list grid">
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <span class="single_skill_icon">
-                
-                            <div class="skills_bar"></div>
-                        </div>
-
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <span class="single_skill_icon">
-                  <i class="fab fa-python"></i>
-                </span>
-                                <h3 class="skills_name">Python</h3>
-                            </div>
-                            <div class="skills_bar"></div>
-                        </div>
-
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <span class="single_skill_icon">
-                  <i class="fab fa-html5"></i>
-                </span>
-                                <h3 class="skills_name">HTML</h3>
-                            </div>
-                            <div class="skills_bar"></div>
-                        </div>
-
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <span class="single_skill_icon">
-                  <i class="fab fa-css3-alt"></i>
-                </span>
-                                <h3 class="skills_name">CSS</h3>
-                            </div>
-                            <div class="skills_bar"></div>
-                        </div>
-
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <span class="single_skill_icon">
-                  <i class="fab fa-js-square"></i>
-                </span>
-                                <h3 class="skills_name">JavaScript</h3>
-                            </div>
-                            <div class="skills_bar"></div>
-                        </div>
-
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <span class="single_skill_icon">
-                 
-                    </div>
-                </div>
-
-           
-            </div>
-        </section>
-
-        <!-- Qualifications -->
-        <section class="qualification section" id="qualification">
-            <h2 class="section_title">Qualifications</h2>
-            <span class="section_subtitle">My Educational Qualification & Work Experience</span>
-
-            <div class="qualification_container container">
-                <div class="qualification_tabs">
-                    <div class="qualification_button button-flex" id="educationheader">
-                        <i class="uil uil-graduation-cap qualification_icon"></i>Education
-                    </div>
-
-                    <div class="qualification_button button-flex" id="workheader">
-                        <i class="uil uil-briefcase-alt qualification_icon"></i>Work
-                    </div>
-                </div>
-
-                <div class="qualification_sections">
-                    <!-- Educational Qualification -->
-                    <div class="qualification_content qualification_active" data-content id="education">
-                        <!-- BTech IT -->
-                        <div class="qualification_data">
-                            <div>
-                                <h3 class="qualification_title">Bachelor Of Computer Application(BCA)</h3>
-                                <span class="qualification_subtitle">Techno India College Of Technology
-                </span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i> 2023 - 2027
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification_circle"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-                        </div>
-
-                        <!-- School 11-12 -->
-                        <div class="qualification_data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification_circle"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification_title">Senior Secondary School</h3>
-                                <span class="qualification_subtitle">Swaraja Senior Secondary School, Alwar</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i> 2021 - 2023
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- School 1-10 -->
-                        <div class="qualification_data">
-                            <div>
-                                <h3 class="qualification_title">Secondary School</h3>
-                                <span class="qualification_subtitle">Denobili School, Chandrapura</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i> 2011 - 2021
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification_circle"></span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                  
-                    </div>
-                </div>
-        </section>
-
-        <!-- Portfolio -->
-        <section class="portfolio section" id="projects">
-            <h2 class="section_title">Projects</h2>
-            <span class="section_subtitle">Most recent work</span>
-
-            <div class="portfolio_container container swiper-container swiper mySwiper">
-                <div class="swiper-wrapper">
-
-                    <!-- Project 4 -->
-                    <div class="portfolio_content grid swiper-slide">
-                        <img src="./assets/img/" alt="" class="portfolio_img">
-
-                        <div class="portfolio_data">
-                            <h3 class="portfolio_title">
-                                Personal Portfolio Website
-                            </h3>
-                            <p class="portfolio_description">
-                                My Personal Portfolio Website made using only HTML, CSS and JS with a clean and minimal UI.
-                            </p>
-                            <a href="#" class="button button-flex button-small portfolio_button" target="_blank">
-                Check out
-                <i class="uil uil-arrow-right button_icon"></i>
-              </a>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="portfolio_content grid swiper-slide">
-                        <img src="#" alt="" class="portfolio_img">
-
-                        <div class="portfolio_data">
-                            <h3 class="portfolio_title">
-                                Some Project
-                            </h3>
-                            <p class="portfolio_description">
-                                A UI Clone made using only HTML, CSS & JS.
-                            </p>
-                            <a href="#" class="button button-flex button-small portfolio_button" target="_blank">
-                Check out
-                <i class="uil uil-arrow-right button_icon"></i>
-              </a>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="portfolio_content grid swiper-slide">
-                        <img src="#" alt="" class="portfolio_img">
-
-                        <div class="portfolio_data">
-                            <h3 class="portfolio_title">
-                                Some Project
-                            </h3>
-                            <p class="portfolio_description">
-                                A UI Clone made using only HTML, CSS & JS.
-                            </p>
-                            <a href="#" class="button button-flex button-small portfolio_button" target="_blank">
-                Check out
-                <i class="uil uil-arrow-right button_icon"></i>
-              </a>
-                        </div>
-                    </div>
-
-                    <!-- Project 1 -->
-                    <div class="portfolio_content grid swiper-slide">
-                        <img src="#" alt="" class="portfolio_img">
-
-                        <div class="portfolio_data">
-                            <h3 class="portfolio_title">
-                                Some Project
-                            </h3>
-                            <p class="portfolio_description">
-                                A UI Clone made using only HTML, CSS & JS.
-                            </p>
-                            <a href="#" class="button button-flex button-small portfolio_button" target="_blank">
-                Check out
-                <i class="uil uil-arrow-right button_icon"></i>
-              </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Arrows -->
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                </div>
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-
-        <!-- Contact Me -->
-        <section class="contact section" id="contact">
-            <h1 class="section_title">Contact Me</h1>
-            <span class="section_subtitle">
-        Want to connect? My inbox is always open!
-      </span>
-
-            <div class="contact_container container grid">
-                <div>
-                    <a href="mailto:kshitijraj96@gmail.com" target="_blank">
-                        <div class="contact_info">
-                            <i class="uil uil-envelope-alt contact_icon"></i>
-                            <div>
-                                <h3 class="contact_title">Email</h3>
-                                <span class="contact_subtitle">kshitijraj96@gmail.com</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="https://twitter.com/kshitijrajx" target="_blank">
-                        <div class="contact_info">
-                            <i class="uil uil-twitter-alt contact_icon"></i>
-                            <div>
-                                <h3 class="contact_title">Twitter</h3>
-                                <span class="contact_subtitle">@kshitijrajx</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="https://maps.app.goo.gl/kgAoQNGviydtK3ww9" target="_blank">
-                        <div class="contact_info">
-                            <i class="uil uil-location-point contact_icon"></i>
-                            <div>
-                                <h3 class="contact_title">Location</h3>
-                                <span class="contact_subtitle">West Bengal, India</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <form action="https://formspree.io/f/xyyozeaq" class="contact_form grid" id="contact-form" method="POST">
-                    <div id="alert" class="alert_style"></div>
-                    <div class="contact_inputs grid">
-                        <div class="contact_content">
-                            <label class="contact_label">Name</label>
-                            <input type="text" name="name" class="contact_input" id="name" required>
-                        </div>
-                        <div class="contact_content">
-                            <label for="email" class="contact_label">Email</label>
-                            <input type="email" name="email" class="contact_input" id="email" required>
-                        </div>
-                    </div>
-                    <div class="contact_content">
-                        <label for="subject" class="contact_label">Subject</label>
-                        <input type="text" name="subject" class="contact_input" id="subject" required>
-                    </div>
-                    <div class="contact_content">
-                        <label for="message" class="contact_label">Message</label>
-                        <textarea name="message" id="" cols="0" rows="7" class="contact_input message" id="message" required></textarea>
-                    </div>
-
-                    <div>
-                        <button type="submit" class="button button-flex">
-              Send Message
-              <i class="uil uil-message button_icon"></i>
-            </button>
-                    </div>
-                </form>
-
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer_bg">
-            <div class="footer_container container grid">
-                <div>
-                    <h1 class="footer_title">Kshitij Raj</h1>
-                </div>
-
-                <ul class="footer_links">
-                    <li>
-                        <a href="#about" class="footer_link">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="footer_link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer_link">Contact Me</a>
-                    </li>
-                </ul>
-
-                <div class="footer_socials">
-                    <a href="https://www.linkedin.com/in/kshitijraj19/" target="_blank" class="footer_social">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                    <a href="https://twitter.com/kshitijrajx" target="_blank" class="footer_social">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
-                    <a href="https://www.instagram.com/kshitijraj19/" target="_blank" class="footer_social">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                </div>
-            </div>
-
-            <p class="footer_copy">&#169; Kshitij Raj.</p>
+  <!-- Header Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo" aria-label="Kshitij Raj Portfolio Home">
+        <div class="nav-logo-icon">
+          <img src="./assets/img/icon.png" alt="Kshitij Raj" class="nav-logo-img" />
         </div>
-    </footer>
+        <div class="logo-name-group">
+          <span class="logo-title">Kshitij Raj</span>
+          <span class="logo-sub">Ops & QA Lead</span>
+        </div>
+      </a>
 
-    <!-- Scroll Top -->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup_icon"></i>
-    </a>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active-link"><i
+                class="ri-home-5-line nav-icon"></i><span>Home</span></a></li>
+          <li class="nav-item"><a href="#about" class="nav-link"><i
+                class="ri-user-3-line nav-icon"></i><span>About</span></a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link"><i
+                class="ri-history-line nav-icon"></i><span>Experience</span></a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><i
+                class="ri-cpu-line nav-icon"></i><span>Skills</span></a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><i
+                class="ri-folder-6-line nav-icon"></i><span>Projects</span></a></li>
+          <li class="nav-item"><a href="#education" class="nav-link"><i
+                class="ri-graduation-cap-line nav-icon"></i><span>Credentials</span></a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i
+                class="ri-chat-1-line nav-icon"></i><span>Contact</span></a></li>
+        </ul>
+      </div>
 
-    <!-- Swiper JS -->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
+      <div class="nav-actions">
+        <!-- Web Audio Synthesizer Sound FX Toggle -->
+        <button class="action-btn" id="audio-toggle" aria-label="Toggle UI Sound Effects"
+          title="Toggle Cyber Audio Feedback">
+          <i class="ri-volume-mute-line" id="audio-icon"></i>
+        </button>
 
-    <!-- Typed JS -->
-    <script src="./assets/js/typed.js"></script>
+        <!-- Dark / Light Theme Toggle -->
+        <button class="action-btn theme-toggle" id="theme-button" aria-label="Toggle Dark / Light Theme"
+          title="Toggle Theme">
+          <i class="ri-moon-clear-line" id="theme-icon"></i>
+        </button>
 
-    <script src="./assets/js/main.js"></script>
+        <!-- Mobile Navigation Toggle -->
+        <div class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+      <div class="container hero-container">
+        <div class="hero-grid">
+
+          <!-- Hero Text & CTA Content -->
+          <div class="hero-content reveal-left">
+            <div class="hero-tag-glow">
+              <span class="status-dot"></span>
+              <span class="hero-tag-text">AVAILABLE FOR OPS, PM & COMMUNITY ROLES</span>
+            </div>
+
+            <h1 class="hero-title">
+              Crafting <span class="gradient-text-3d">Next-Gen</span> Gaming & Tech Operations
+            </h1>
+
+            <div class="hero-subtitle-box">
+              <span class="subtitle-prompt">&gt; role:</span>
+              <span id="typing-text" class="typing-text"></span>
+              <span class="cursor-blink">|</span>
+            </div>
+
+            <p class="hero-bio">
+              Driven by gaming culture and precision technology coordination. I bridge high-energy esports activations,
+              structured gameplay QA triage, and deadline-focused project execution across digital entertainment.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary btn-3d" data-sound="click">
+                <i class="ri-rocket-2-line"></i>
+                <span>Explore Projects</span>
+                <div class="btn-glow-layer"></div>
+              </a>
+              <button class="btn btn-glass btn-3d view-resume-btn" onclick="openCVModal()" data-sound="click">
+                <i class="ri-file-text-line"></i>
+                <span>View / Print CV</span>
+              </button>
+              <a href="#contact" class="btn btn-outline btn-3d" data-sound="click">
+                <i class="ri-send-plane-2-line"></i>
+                <span>Get In Touch</span>
+              </a>
+            </div>
+
+            <!-- Social Links with 3D Pop -->
+            <div class="hero-socials">
+              <span class="social-label">CONNECT:</span>
+              <a href="https://linkedin.com/in/imkshitijraj" target="_blank" class="social-link"
+                title="LinkedIn Profile" aria-label="LinkedIn">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+              <a href="https://github.com/imkshitijraj" target="_blank" class="social-link" title="GitHub Profile"
+                aria-label="GitHub">
+                <i class="ri-github-fill"></i>
+              </a>
+              <a href="mailto:kshitij.raj.96@gmail.com" class="social-link" title="Email Direct" aria-label="Email">
+                <i class="ri-mail-line"></i>
+              </a>
+              <a href="tel:+919304355202" class="social-link" title="Call Direct" aria-label="Phone">
+                <i class="ri-phone-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero 3D Holographic Identity Showcase -->
+          <div class="hero-card-wrapper reveal-right">
+            <div class="glass-card hero-3d-card" data-tilt>
+              <div class="card-corner corner-tl"></div>
+              <div class="card-corner corner-br"></div>
+
+              <!-- 3D Hologram Avatar Hub -->
+              <div class="hologram-avatar-scene" data-tilt-layer="60">
+                <div class="avatar-orbit-ring ring-outer"></div>
+                <div class="avatar-orbit-ring ring-middle"></div>
+                <div class="avatar-orbit-ring ring-inner"></div>
+                <div class="avatar-radar-sweep"></div>
+
+                <!-- Floating 3D Tech Badges Orbiting -->
+                <div class="floating-orbit-tag tag-pos-1">
+                  <i class="ri-gamepad-fill" style="color: var(--accent-cyan);"></i>
+                  <span>Esports Ops</span>
+                </div>
+                <div class="floating-orbit-tag tag-pos-2">
+                  <i class="ri-bug-fill" style="color: var(--accent-rose);"></i>
+                  <span>QA Specialist</span>
+                </div>
+                <div class="floating-orbit-tag tag-pos-3">
+                  <i class="ri-terminal-box-fill" style="color: var(--accent-emerald);"></i>
+                  <span>ML & Python</span>
+                </div>
+                <div class="floating-orbit-tag tag-pos-4">
+                  <i class="ri-trophy-fill" style="color: var(--accent-amber);"></i>
+                  <span>TEC Spartans</span>
+                </div>
+
+                <div class="hologram-core">
+                  <img src="./assets/img/icon.png" alt="Kshitij Raj Avatar" class="hologram-avatar-img" />
+                  <div class="scanline"></div>
+                </div>
+              </div>
+
+              <!-- 3D Card Info Details -->
+              <div class="hero-card-info" data-tilt-layer="35">
+                <h3 class="hero-card-name">Kshitij Raj</h3>
+                <p class="hero-card-tagline">BCA Undergrad & Tech Coordinator</p>
+                <div class="status-indicator-badge">
+                  <span class="pulse-dot"></span>
+                  <span>Active & Ready for High-Impact Projects</span>
+                </div>
+
+                <div class="hero-quick-contacts">
+                  <div class="contact-pill" onclick="copyToClipboard('+919304355202', 'Phone Number')"
+                    title="Click to copy phone">
+                    <div>
+                      <i class="ri-phone-fill"></i>
+                      <span>+91-9304355202</span>
+                    </div>
+                    <i class="ri-file-copy-line copy-icon"></i>
+                  </div>
+                  <div class="contact-pill" onclick="copyToClipboard('kshitij.raj.96@gmail.com', 'Email Address')"
+                    title="Click to copy email">
+                    <div>
+                      <i class="ri-mail-fill"></i>
+                      <span>kshitij.raj.96@gmail.com</span>
+                    </div>
+                    <i class="ri-file-copy-line copy-icon"></i>
+                  </div>
+                  <div class="contact-pill-static">
+                    <div>
+                      <i class="ri-map-pin-2-fill"></i>
+                      <span>Kolkata, West Bengal, India</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Floating 3D Metrics Bar -->
+        <div class="glass-card hero-metrics-bar-3d reveal delay-2" data-tilt>
+          <div class="metric-card-3d" data-tilt-layer="25">
+            <div class="metric-icon-wrap" style="background: rgba(99, 102, 241, 0.15); color: var(--accent-primary);">
+              <i class="ri-time-line"></i>
+            </div>
+            <div class="metric-info">
+              <h3 class="metric-number" data-count="15+ Mos">15+ Mos</h3>
+              <p class="metric-label">Independent Gameplay QA</p>
+            </div>
+          </div>
+
+          <div class="metric-divider"></div>
+
+          <div class="metric-card-3d" data-tilt-layer="25">
+            <div class="metric-icon-wrap" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan);">
+              <i class="ri-team-line"></i>
+            </div>
+            <div class="metric-info">
+              <h3 class="metric-number" data-count="300-500">300-500</h3>
+              <p class="metric-label">Fest Attendees Managed</p>
+            </div>
+          </div>
+
+          <div class="metric-divider"></div>
+
+          <div class="metric-card-3d" data-tilt-layer="25">
+            <div class="metric-icon-wrap" style="background: rgba(168, 85, 247, 0.15); color: var(--accent-secondary);">
+              <i class="ri-trophy-line"></i>
+            </div>
+            <div class="metric-info">
+              <h3 class="metric-number" data-count="3+ Roles">3+ Roles</h3>
+              <p class="metric-label">Esports, QA & ML Intern</p>
+            </div>
+          </div>
+
+          <div class="metric-divider"></div>
+
+          <div class="metric-card-3d" data-tilt-layer="25">
+            <div class="metric-icon-wrap" style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald);">
+              <i class="ri-graduation-cap-line"></i>
+            </div>
+            <div class="metric-info">
+              <h3 class="metric-number" data-count="2027">2027</h3>
+              <p class="metric-label">BCA Expected Graduation</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge-3d">
+            <i class="ri-user-heart-line"></i>
+            <span>BACKGROUND & FOCUS</span>
+          </div>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">A synergy of operations leadership, systematic QA methodologies, and software
+            foundations.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Narrative 3D Card -->
+          <div class="glass-card about-card-main reveal-left" data-tilt>
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-br"></div>
+
+            <div class="card-glow-header" data-tilt-layer="20">
+              <span class="cyber-bracket">[</span>
+              <h3>My Journey & Mission</h3>
+              <span class="cyber-bracket">]</span>
+            </div>
+
+            <p class="about-text" data-tilt-layer="15">
+              I am a BCA undergraduate with an insatiable drive for hands-on execution. Whether it's managing live
+              esports activations under strict timelines, conducting 15+ months of structured independent gameplay QA
+              for tier-1 titles like <em>Free Fire MAX</em>, or orchestrating web deployments for multi-hundred attendee
+              college fests, I turn vision into flawless delivery.
+            </p>
+            <p class="about-text" data-tilt-layer="15">
+              I combine analytical curiosity with machine learning foundations (financial market dataset analysis in
+              Python) and project management simulation training (Accenture North America). My mission is to build
+              reliable, high-adrenaline, and bug-free experiences for players, communities, and tech products.
+            </p>
+
+            <!-- 4 3D Pillar Highlights -->
+            <div class="highlights-grid" data-tilt-layer="30">
+              <div class="highlight-box-3d">
+                <div class="highlight-icon" style="background: rgba(99, 102, 241, 0.2); color: var(--accent-primary);">
+                  <i class="ri-gamepad-line"></i>
+                </div>
+                <div>
+                  <h4>Esports & Event Ops</h4>
+                  <p>On-ground execution, timeline tracking & stakeholder coordination.</p>
+                </div>
+              </div>
+
+              <div class="highlight-box-3d">
+                <div class="highlight-icon" style="background: rgba(6, 182, 212, 0.2); color: var(--accent-cyan);">
+                  <i class="ri-bug-2-line"></i>
+                </div>
+                <div>
+                  <h4>Gameplay QA</h4>
+                  <p>Defect discovery, bug triage, severity ranking & escalation cycles.</p>
+                </div>
+              </div>
+
+              <div class="highlight-box-3d">
+                <div class="highlight-icon"
+                  style="background: rgba(168, 85, 247, 0.2); color: var(--accent-secondary);">
+                  <i class="ri-cpu-line"></i>
+                </div>
+                <div>
+                  <h4>Machine Learning</h4>
+                  <p>Financial market dataset analytics, Python preprocessing & models.</p>
+                </div>
+              </div>
+
+              <div class="highlight-box-3d">
+                <div class="highlight-icon" style="background: rgba(16, 185, 129, 0.2); color: var(--accent-emerald);">
+                  <i class="ri-kanban-check-line"></i>
+                </div>
+                <div>
+                  <h4>Project Coordination</h4>
+                  <p>Task breakdown, risk mitigation, webhook triggers & PRD authoring.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Languages & Mindset Side Stack -->
+          <div class="about-side-stack reveal-right">
+
+            <!-- Language Proficiency Card -->
+            <div class="glass-card languages-card-3d" data-tilt>
+              <div class="card-glow-header" data-tilt-layer="20">
+                <i class="ri-translate-2" style="color: var(--accent-primary);"></i>
+                <h3 style="font-size: 1.25rem;">Languages Spoken</h3>
+              </div>
+              <div class="lang-list" data-tilt-layer="25">
+                <div class="lang-item-3d">
+                  <div class="lang-info">
+                    <div class="lang-flag-dot" style="background: var(--accent-cyan); color: var(--accent-cyan);"></div>
+                    <span class="lang-name">English</span>
+                  </div>
+                  <span class="lang-badge badge-proficient">Proficient / Professional</span>
+                </div>
+
+                <div class="lang-item-3d">
+                  <div class="lang-info">
+                    <div class="lang-flag-dot" style="background: var(--accent-emerald); color: var(--accent-emerald);">
+                    </div>
+                    <span class="lang-name">Hindi</span>
+                  </div>
+                  <span class="lang-badge badge-native">Native / Fluent</span>
+                </div>
+
+                <div class="lang-item-3d">
+                  <div class="lang-info">
+                    <div class="lang-flag-dot" style="background: var(--accent-amber); color: var(--accent-amber);">
+                    </div>
+                    <span class="lang-name">Bengali</span>
+                  </div>
+                  <span class="lang-badge badge-basic">Conversational</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mindset & Philosophy Card -->
+            <div class="glass-card philosophy-card-3d" data-tilt>
+              <div class="card-glow-header" data-tilt-layer="20">
+                <i class="ri-compass-3-line" style="color: var(--accent-secondary);"></i>
+                <h3 style="font-size: 1.25rem;">Core Philosophy</h3>
+              </div>
+              <div class="philosophy-content" data-tilt-layer="25">
+                <div class="quote-symbol">“</div>
+                <p class="philosophy-quote">
+                  Operational clarity turns chaos into unforgettable esports activations, while disciplined quality
+                  assurance guarantees every player interaction feels seamless and exhilarating.
+                </p>
+                <div class="quote-author">— Kshitij Raj</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge-3d">
+            <i class="ri-briefcase-4-line"></i>
+            <span>TRACK RECORD</span>
+          </div>
+          <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+          <p class="section-subtitle">Demonstrated leadership in event operations, independent game QA testing, and
+            AI/ML workflows.</p>
+        </div>
+
+        <!-- 3D Glowing Timeline -->
+        <div class="timeline-3d">
+          <div class="timeline-laser-beam"></div>
+
+          <!-- Experience Item 1 -->
+          <div class="timeline-item-3d reveal-left">
+            <div class="timeline-node">
+              <i class="ri-gamepad-line node-icon"></i>
+            </div>
+
+            <div class="glass-card timeline-card-3d" data-tilt>
+              <div class="card-corner corner-tl"></div>
+              <div class="card-corner corner-br"></div>
+
+              <div class="timeline-card-header" data-tilt-layer="20">
+                <div>
+                  <div class="role-pill-group">
+                    <span class="timeline-badge badge-current">CURRENT ROLE</span>
+                    <span class="timeline-type-tag">Freelance / Hybrid</span>
+                  </div>
+                  <h3 class="role-title">Student Brand Ambassador</h3>
+                  <div class="company-name">
+                    <i class="ri-shield-star-line"></i> The Esports Club (TEC) · TEC Spartans
+                  </div>
+                </div>
+                <div class="timeline-date-box">
+                  <i class="ri-calendar-event-line"></i>
+                  <span>May 2026 – Present</span>
+                </div>
+              </div>
+
+              <div class="location-tag" data-tilt-layer="15">
+                <i class="ri-map-pin-2-line"></i> Bengaluru / Kolkata – Hybrid
+              </div>
+
+              <ul class="timeline-bullets" data-tilt-layer="25">
+                <li>Plan and execute regional esports activations end-to-end, managing tournament timelines, participant
+                  coordination, and on-ground delivery.</li>
+                <li>Track action items and deadlines across concurrent live event responsibilities, ensuring zero
+                  operational lapses during live stages.</li>
+                <li>Serve as single point of contact between TEC's national operations leadership and the local gaming
+                  community.</li>
+                <li>Diagnose operational bottlenecks during live event workflows and implement real-time contingencies
+                  to maintain delivery schedules.</li>
+                <li>Maintain exhaustive post-event documentation, metrics reports, and participant feedback to refine
+                  subsequent tournament cycles.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item-3d reveal-right">
+            <div class="timeline-node">
+              <i class="ri-bug-line node-icon"></i>
+            </div>
+
+            <div class="glass-card timeline-card-3d" data-tilt>
+              <div class="card-corner corner-tl"></div>
+              <div class="card-corner corner-br"></div>
+
+              <div class="timeline-card-header" data-tilt-layer="20">
+                <div>
+                  <div class="role-pill-group">
+                    <span class="timeline-badge badge-longterm">15+ MONTHS CONTEMPORARY QA</span>
+                    <span class="timeline-type-tag">Independent Contributor</span>
+                  </div>
+                  <h3 class="role-title">Independent Gameplay QA & Community Feedback Contributor</h3>
+                  <div class="company-name">
+                    <i class="ri-fire-line" style="color: var(--accent-rose);"></i> Free Fire MAX India
+                  </div>
+                </div>
+                <div class="timeline-date-box">
+                  <i class="ri-calendar-event-line"></i>
+                  <span>May 2025 – Present</span>
+                </div>
+              </div>
+
+              <div class="location-tag" data-tilt-layer="15">
+                <i class="ri-crosshair-2-line"></i> Autonomous Testing & Defect Triage Lifecycle
+              </div>
+
+              <ul class="timeline-bullets" data-tilt-layer="25">
+                <li>Executed an autonomous 15+ month QA workflow — formulating reproducible testing matrices, defect
+                  reporting, and tracking patch verifications.</li>
+                <li>Prioritized defects by user impact, severity index, and exploit potential, implementing a structured
+                  triage system for maximum developer clarity.</li>
+                <li>Maintained version-wise regression archives to monitor bug recurrence, weapon balance anomalies, and
+                  network latency regressions.</li>
+                <li>Operated across the entire defect lifecycle without direct oversight — from boundary stress
+                  discovery to reproducible steps, capture logs, and resolution tracking.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience Item 3 -->
+          <div class="timeline-item-3d reveal-left">
+            <div class="timeline-node">
+              <i class="ri-terminal-box-line node-icon"></i>
+            </div>
+
+            <div class="glass-card timeline-card-3d" data-tilt>
+              <div class="card-corner corner-tl"></div>
+              <div class="card-corner corner-br"></div>
+
+              <div class="timeline-card-header" data-tilt-layer="20">
+                <div>
+                  <div class="role-pill-group">
+                    <span class="timeline-badge badge-cert">ISO 9001:2015 CERTIFIED</span>
+                    <span class="timeline-type-tag">Internship</span>
+                  </div>
+                  <h3 class="role-title">Intern — Machine Learning using Python</h3>
+                  <div class="company-name">
+                    <i class="ri-code-s-slash-line"></i> Euphoria GenX
+                  </div>
+                </div>
+                <div class="timeline-date-box">
+                  <i class="ri-calendar-event-line"></i>
+                  <span>Jul 2025 – Sep 2025</span>
+                </div>
+              </div>
+
+              <div class="location-tag" data-tilt-layer="15">
+                <i class="ri-building-4-line"></i> Remote · Techno India College of Technology
+              </div>
+
+              <ul class="timeline-bullets" data-tilt-layer="25">
+                <li>Completed intensive ML internship focused on AI-driven financial market dataset analysis with
+                  Python.</li>
+                <li>Implemented NumPy, Pandas, and Matplotlib pipelines to clean, normalize, and visualize
+                  high-dimensional financial timeseries data.</li>
+                <li>Built practical foundation in supervised predictive models, hyperparameter tuning, and model
+                  validation metrics within an engineering team setting.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills & Competencies Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge-3d">
+            <i class="ri-sparkling-2-line"></i>
+            <span>CAPABILITIES</span>
+          </div>
+          <h2 class="section-title">Skills & <span class="gradient-text">Competencies</span></h2>
+          <p class="section-subtitle">Operational leadership, QA defect methodologies, and modern software foundations.
+          </p>
+        </div>
+
+        <!-- 3D Interactive Filter Tabs -->
+        <div class="skills-tabs-3d reveal delay-1">
+          <button class="skill-tab-btn-3d active" data-filter="all" data-sound="hover">
+            <i class="ri-apps-2-line"></i> <span>All Disciplines</span>
+          </button>
+          <button class="skill-tab-btn-3d" data-filter="pm" data-sound="hover">
+            <i class="ri-kanban-check-line"></i> <span>Event & Project Ops</span>
+          </button>
+          <button class="skill-tab-btn-3d" data-filter="qa" data-sound="hover">
+            <i class="ri-bug-2-line"></i> <span>QA & Community</span>
+          </button>
+          <button class="skill-tab-btn-3d" data-filter="tech" data-sound="hover">
+            <i class="ri-code-box-line"></i> <span>Tech & Software</span>
+          </button>
+        </div>
+
+        <!-- Skills Grid with 3D Pop & Animated Energy Meters -->
+        <div class="skills-grid-3d">
+
+          <!-- Category 1: Project & Event Management -->
+          <div class="glass-card skill-card-3d reveal delay-1" data-category="pm" data-tilt>
+            <div class="skill-card-top" data-tilt-layer="20">
+              <div class="skill-card-icon" style="background: rgba(99, 102, 241, 0.2); color: var(--accent-primary);">
+                <i class="ri-kanban-check-line"></i>
+              </div>
+              <div>
+                <h3 class="skill-card-title">Project & Event Management</h3>
+                <span class="skill-card-sub">Operations & Logistics</span>
+              </div>
+            </div>
+
+            <div class="skill-items-container" data-tilt-layer="30">
+              <div class="skill-pill-3d">
+                <div class="skill-pill-header">
+                  <div class="skill-pill-left">
+                    <i class="ri-checkbox-circle-fill" style="color: var(--accent-primary);"></i>
+                    <span class="skill-name">End-to-End Project Delivery</span>
+                  </div>
+                  <span class="level-badge level-advanced">Advanced · 92%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="92%"></div>
+                </div>
+              </div>
+
+              <div class="skill-pill-3d">
+                <div class="skill-pill-header">
+                  <div class="skill-pill-left">
+                    <i class="ri-checkbox-circle-fill" style="color: var(--accent-primary);"></i>
+                    <span class="skill-name">Timeline & Milestone Tracking</span>
+                  </div>
+                  <span class="level-badge level-advanced">Advanced · 90%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="90%"></div>
+                </div>
+              </div>
+
+              <div class="skill-pill-3d">
+                <div class="skill-pill-header">
+                  <div class="skill-pill-left">
+                    <i class="ri-checkbox-circle-fill" style="color: var(--accent-primary);"></i>
+                    <span class="skill-name">Stakeholder Coordination</span>
+                  </div>
+                  <span class="level-badge level-proficient">Proficient · 86%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="86%"></div>
+                </div>
+              </div>
+
+              <div class="skill-pill-3d">
+                <div class="skill-pill-header">
+                  <div class="skill-pill-left">
+                    <i class="ri-checkbox-circle-fill" style="color: var(--accent-primary);"></i>
+                    <span class="skill-name">Risk Assessment & Mitigation</span>
+                  </div>
+                  <span class="level-badge level-proficient">Proficient · 84%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="84%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: QA & Community Operations -->
+          <div class="glass-card skill-card-3d reveal delay-2" data-category="qa" data-tilt>
+            <div class="skill-card-top" data-tilt-layer="20">
+              <div class="skill-card-icon" style="background: rgba(6, 182, 212, 0.2); color: var(--accent-cyan);">
+                <i class="ri-bug-2-line"></i>
+              </div>
+              <div>
+                <h3 class="skill-card-title">QA & Community Operations</h3>
+                <span class="skill-card-sub">Defect Triage & Player UX</span>
+              </div>
+            </div>
+
+            <div class="skill-items-container" data-tilt-layer="30">
+              <div class="skill-pill-3d">
+                <div class="skill-pill-header">
+                  <div class="skill-pill-left">
+                    <i class="ri-checkbox-circle-fill" style="color: var(--accent-cyan);"></i>
+                    <span class="skill-name">Gameplay Testing & Bug Triage</span>
+                  </div>
+                  <span class="level-badge level-exp">15+ Mos Exp · 95%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="95%"></div>
+                </div>
+              </div>
+
+              <div class="skill-pill-3d">
+                <div class="skill-pill-header">
+                  <div class="skill-pill-left">
+                    <i class="ri-checkbox-circle-fill" style="color: var(--accent-cyan);"></i>
+                    <span class="skill-name">UX & Player Feedback Analysis</span>
+                  </div>
+                  <span class="level-badge level-advanced">Advanced · 90%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="90%"></div>
+                </div>
+              </div>
+
+              <div class="skill-pill-3d">
+                <div class="skill-pill-header">
+                  <div class="skill-pill-left">
+                    <i class="ri-checkbox-circle-fill" style="color: var(--accent-cyan);"></i>
+                    <span class="skill-name">Defect Escalation & Logs</span>
+                  </div>
+                  <span class="level-badge level-advanced">Advanced · 92%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="92%"></div>
+                </div>
+              </div>
+
+              <div class="skill-pill-3d">
+                <div class="skill-pill-header">
+                  <div class="skill-pill-left">
+                    <i class="ri-checkbox-circle-fill" style="color: var(--accent-cyan);"></i>
+                    <span class="skill-name">Community Leadership & Outreach</span>
+                  </div>
+                  <span class="level-badge level-proficient">Proficient · 88%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Technical & Development -->
+          <div class="glass-card skill-card-3d reveal delay-3" data-category="tech" data-tilt>
+            <div class="skill-card-top" data-tilt-layer="20">
+              <div class="skill-card-icon" style="background: rgba(168, 85, 247, 0.2); color: var(--accent-secondary);">
+                <i class="ri-code-s-slash-line"></i>
+              </div>
+              <div>
+                <h3 class="skill-card-title">Technical & Development</h3>
+                <span class="skill-card-sub">Programming & Foundations</span>
+              </div>
+            </div>
+
+            <div class="skill-items-container" data-tilt-layer="30">
+              <div class="skill-pill-3d">
+                <div class="skill-pill-header">
+                  <div class="skill-pill-left">
+                    <i class="ri-html5-fill" style="color: #e34f26;"></i>
+                    <span class="skill-name">HTML5, CSS3, JavaScript</span>
+                  </div>
+                  <span class="level-badge level-proficient">Proficient · 85%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="85%"></div>
+                </div>
+              </div>
+
+              <div class="skill-pill-3d">
+                <div class="skill-pill-header">
+                  <div class="skill-pill-left">
+                    <i class="ri-python-fill" style="color: #38bdf8;"></i>
+                    <span class="skill-name">Python Data Analysis</span>
+                  </div>
+                  <span class="level-badge level-proficient">Proficient · 82%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="82%"></div>
+                </div>
+              </div>
+
+              <div class="skill-pill-3d">
+                <div class="skill-pill-header">
+                  <div class="skill-pill-left">
+                    <i class="ri-brain-line" style="color: var(--accent-secondary);"></i>
+                    <span class="skill-name">Machine Learning Basics</span>
+                  </div>
+                  <span class="level-badge level-foundational">Foundational · 76%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="76%"></div>
+                </div>
+              </div>
+
+              <div class="skill-pill-3d">
+                <div class="skill-pill-header">
+                  <div class="skill-pill-left">
+                    <i class="ri-layout-masonry-line" style="color: var(--accent-emerald);"></i>
+                    <span class="skill-name">Responsive UI Architecture</span>
+                  </div>
+                  <span class="level-badge level-proficient">Proficient · 86%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" data-level="86%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Showcase Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge-3d">
+            <i class="ri-flashlight-line"></i>
+            <span>SHOWCASE</span>
+          </div>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Product architecture, full-lifecycle web deployments, and live event hubs.</p>
+        </div>
+
+        <div class="projects-grid-3d">
+
+          <!-- Project Card 1: NEXUS -->
+          <div class="glass-card project-card-3d reveal-left" data-tilt>
+            <div class="project-card-banner">
+              <div class="project-banner-overlay"></div>
+              <div class="project-tech-badges">
+                <span class="tech-pill"><i class="ri-cpu-line"></i> Product Architecture</span>
+                <span class="tech-pill"><i class="ri-calendar-line"></i> 2025–2026</span>
+              </div>
+              <div class="project-3d-visual">
+                <div class="iso-cube">
+                  <div class="iso-face iso-front">NEXUS</div>
+                  <div class="iso-face iso-top">WORKFLOW</div>
+                  <div class="iso-face iso-right">PM</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body" data-tilt-layer="25">
+              <h3 class="project-title">NEXUS — Project & Workflow Management Platform</h3>
+              <p class="project-description">
+                Comprehensive blueprint for an enterprise project orchestration platform designed to centralize sprint
+                tracking, automated escalation triggers, PRD documentation hubs, and cross-team webhook integrations.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag-3d">Workflow Automation</span>
+                <span class="tag-3d">PRD Architecture</span>
+                <span class="tag-3d">Webhook Triggers</span>
+                <span class="tag-3d">Analytics Hub</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-primary btn-sm btn-3d project-detail-btn" data-project="nexus"
+                  onclick="openProjectModal('nexus')" data-sound="click">
+                  <i class="ri-information-line"></i> View Detailed Architecture
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2: INCUBES -->
+          <div class="glass-card project-card-3d reveal-right" data-tilt>
+            <div class="project-card-banner banner-incubes">
+              <div class="project-banner-overlay"></div>
+              <div class="project-tech-badges">
+                <span class="tech-pill pill-live"><span class="pulse-dot-green"></span> Live Event Site</span>
+                <span class="tech-pill"><i class="ri-calendar-line"></i> 2024</span>
+              </div>
+              <div class="project-3d-visual">
+                <div class="iso-cube cube-incubes">
+                  <div class="iso-face iso-front">INCUBES</div>
+                  <div class="iso-face iso-top">300-500</div>
+                  <div class="iso-face iso-right">LIVE</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body" data-tilt-layer="25">
+              <h3 class="project-title">INCUBES – Inter-College Event Website</h3>
+              <p class="project-description">
+                Directed full frontend engineering and on-time production deployment for an inter-college technical fest
+                with 300–500 attendees. Engineered real-time schedule modules and zero-downtime registration forms.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag-3d">HTML5 / CSS3</span>
+                <span class="tag-3d">JavaScript</span>
+                <span class="tag-3d">Live Event Ops</span>
+                <span class="tag-3d">Production Server</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://tint.edu.in/incubes" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm btn-3d"
+                  data-sound="click">
+                  <i class="ri-external-link-line"></i> Visit Live Site
+                </a>
+                <button type="button" class="btn btn-outline btn-sm btn-3d project-detail-btn" data-project="incubes"
+                  onclick="openProjectModal('incubes')" data-sound="click">
+                  <i class="ri-file-list-3-line"></i> Case Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education, Certifications & Achievements Section -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge-3d">
+            <i class="ri-award-line"></i>
+            <span>CREDENTIALS</span>
+          </div>
+          <h2 class="section-title">Education & <span class="gradient-text">Credentials</span></h2>
+          <p class="section-subtitle">Academic foundations, professional simulations, and competitive honors.</p>
+        </div>
+
+        <div class="ed-cert-grid">
+
+          <!-- Column 1: Academic Background -->
+          <div class="reveal-left">
+            <div class="card-block-header-3d">
+              <div class="block-header-icon" style="background: rgba(99, 102, 241, 0.2); color: var(--accent-primary);">
+                <i class="ri-graduation-cap-fill"></i>
+              </div>
+              <h3>Academic Background</h3>
+            </div>
+
+            <div class="ed-list">
+              <div class="glass-card ed-item-3d" data-tilt>
+                <div class="ed-badge-year">2023 – 2027</div>
+                <h4 class="ed-title">Bachelor of Computer Applications (BCA)</h4>
+                <div class="ed-institution">
+                  <i class="ri-building-line"></i> Techno International New Town, Kolkata
+                </div>
+                <p class="ed-details">Software development foundations, computer architecture, data structures, and
+                  database management.</p>
+              </div>
+
+              <div class="glass-card ed-item-3d" data-tilt>
+                <div class="ed-badge-year">2023</div>
+                <h4 class="ed-title">Class XII (Senior Secondary)</h4>
+                <div class="ed-institution">
+                  <i class="ri-school-line"></i> Swarajaya Senior Secondary School, Alwar
+                </div>
+                <p class="ed-details">NWAC Board · <strong>78% Marks</strong> in Senior Secondary Curriculum.</p>
+              </div>
+
+              <div class="glass-card ed-item-3d" data-tilt>
+                <div class="ed-badge-year">2021</div>
+                <h4 class="ed-title">Class X (Secondary School)</h4>
+                <div class="ed-institution">
+                  <i class="ri-school-line"></i> De Nobili School, Chandrapura
+                </div>
+                <p class="ed-details">ICSE Board · <strong>78% Marks</strong> with Science & Mathematics focus.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Certifications & Training -->
+          <div class="reveal-right">
+            <div class="card-block-header-3d">
+              <div class="block-header-icon" style="background: rgba(6, 182, 212, 0.2); color: var(--accent-cyan);">
+                <i class="ri-medal-fill"></i>
+              </div>
+              <h3>Certifications & Training</h3>
+            </div>
+
+            <div class="cert-list">
+              <div class="glass-card cert-item-3d" data-tilt>
+                <div class="cert-top-row">
+                  <h4 class="cert-title">Accenture North America — Project Management</h4>
+                  <span class="cert-date-badge">Nov 2024</span>
+                </div>
+                <div class="cert-provider"><i class="ri-verified-badge-line" style="color: var(--accent-primary);"></i>
+                  Forage Professional Simulation</div>
+                <p class="cert-desc">End-to-end project management simulation: milestone planning, cross-functional risk
+                  matrices, and client status communication.</p>
+              </div>
+
+              <div class="glass-card cert-item-3d" data-tilt>
+                <div class="cert-top-row">
+                  <h4 class="cert-title">GMAT Focus — Quantitative Master Math</h4>
+                  <span class="cert-date-badge">May 2026</span>
+                </div>
+                <div class="cert-provider"><i class="ri-verified-badge-line" style="color: var(--accent-cyan);"></i>
+                  Udemy Professional Credential</div>
+                <p class="cert-desc">Advanced quantitative reasoning, statistical data insights, and algorithmic
+                  problem-solving.</p>
+              </div>
+
+              <div class="glass-card cert-item-3d" data-tilt>
+                <div class="cert-top-row">
+                  <h4 class="cert-title">Software Courses in Python, CSS & JavaScript</h4>
+                  <span class="cert-date-badge">2024</span>
+                </div>
+                <div class="cert-provider"><i class="ri-verified-badge-line"
+                    style="color: var(--accent-secondary);"></i> Udemy Development Certification</div>
+                <p class="cert-desc">Self-directed software engineering foundations in web architecture, DOM
+                  manipulation, and Python scripting.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Full Width Block: Achievements & Interactive Mini-Game Easter Egg -->
+        <div class="achievements-section-3d reveal delay-2">
+          <div class="card-block-header-3d">
+            <div class="block-header-icon" style="background: rgba(245, 158, 11, 0.2); color: var(--accent-amber);">
+              <i class="ri-trophy-fill"></i>
+            </div>
+            <h3>Achievements & Recognition</h3>
+          </div>
+
+          <div class="achievements-grid-3d">
+            <div class="glass-card achievement-card-3d" data-tilt>
+              <div class="achievement-icon-wrap" style="color: var(--accent-primary);">
+                <i class="ri-voiceprint-line"></i>
+              </div>
+              <div class="achievement-meta">
+                <span class="achievement-year">Dec 2025</span>
+                <h4 class="achievement-title">AI vs Human Debate Contest</h4>
+                <p class="achievement-desc">Awarded <strong>Remarkable Performance</strong> for critical argument
+                  structure and logical articulation under pressure.</p>
+              </div>
+            </div>
+
+            <div class="glass-card achievement-card-3d" data-tilt>
+              <div class="achievement-icon-wrap" style="color: var(--accent-cyan);">
+                <i class="ri-code-s-line"></i>
+              </div>
+              <div class="achievement-meta">
+                <span class="achievement-year">Apr 2026</span>
+                <h4 class="achievement-title">Tech-A-Thon Participation</h4>
+                <p class="achievement-desc">PRABUDDHA 2026 — Competed in inter-college software engineering challenge.
+                </p>
+              </div>
+            </div>
+
+            <div class="glass-card achievement-card-3d" data-tilt>
+              <div class="achievement-icon-wrap" style="color: var(--accent-amber);">
+                <i class="ri-lightbulb-line"></i>
+              </div>
+              <div class="achievement-meta">
+                <span class="achievement-year">Jan 2026</span>
+                <h4 class="achievement-title">Entrepreneurship Workshop</h4>
+                <p class="achievement-desc">Kolkata Regional Workshop on agile venture launching and business
+                  operations.</p>
+              </div>
+            </div>
+
+            <div class="glass-card achievement-card-3d" data-tilt>
+              <div class="achievement-icon-wrap" style="color: var(--accent-emerald);">
+                <i class="ri-links-fill"></i>
+              </div>
+              <div class="achievement-meta">
+                <span class="achievement-year">Jun 2024</span>
+                <h4 class="achievement-title">Blockchain Tech Workshop</h4>
+                <p class="achievement-desc">Two-day industry workshop covering decentralized consensus and distributed
+                  ledger architecture.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Gamer / QA Reaction Reflex Mini-Widget -->
+          <div class="glass-card reaction-tester-card" data-tilt>
+            <div class="reaction-header">
+              <div class="reaction-title-group">
+                <i class="ri-gamepad-fill" style="color: var(--accent-cyan); font-size: 1.5rem;"></i>
+                <div>
+                  <h4 style="font-size: 1.1rem; color: var(--text-primary);">Esports Reflex & QA Bug Hunter Mini-Test
+                  </h4>
+                  <p style="font-size: 0.85rem; color: var(--text-secondary);">Test your reaction speed against an
+                    esports coordinator and QA tester!</p>
+                </div>
+              </div>
+              <button class="btn btn-outline btn-sm" id="start-reflex-test" data-sound="click">
+                <i class="ri-play-fill"></i> <span>Start Test</span>
+              </button>
+            </div>
+
+            <div class="reflex-arena" id="reflex-arena">
+              <div class="reflex-idle-text" id="reflex-status-text">Click "Start Test", wait for green pulse, then click
+                immediately!</div>
+              <div class="reflex-target" id="reflex-target">
+                <i class="ri-crosshair-2-fill"></i>
+              </div>
+            </div>
+
+            <div class="reflex-result-bar" id="reflex-result-bar">
+              <span id="reflex-score-label">Reflex Score: -- ms</span>
+              <span id="reflex-rank-badge" class="rank-badge rank-untested">UNTESTED</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge-3d">
+            <i class="ri-chat-smile-2-line"></i>
+            <span>GET IN TOUCH</span>
+          </div>
+          <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Open for esports event contracts, QA testing, project management, and
+            collaborative roles.</p>
+        </div>
+
+        <div class="contact-grid-3d">
+          <!-- Left Column: 3D Contact Action Cards -->
+          <div class="contact-info-cards reveal-left">
+
+            <div class="glass-card contact-card-3d" onclick="copyToClipboard('+919304355202', 'Phone Number')" data-tilt
+              data-sound="click">
+              <div class="contact-icon-3d" style="background: rgba(99, 102, 241, 0.15); color: var(--accent-primary);">
+                <i class="ri-phone-fill"></i>
+              </div>
+              <div class="contact-details-3d" data-tilt-layer="20">
+                <h4>Phone / WhatsApp</h4>
+                <p>+91-9304355202</p>
+                <div class="copy-hint-3d"><i class="ri-file-copy-line"></i> Click to copy number</div>
+              </div>
+            </div>
+
+            <div class="glass-card contact-card-3d"
+              onclick="copyToClipboard('kshitij.raj.96@gmail.com', 'Email Address')" data-tilt data-sound="click">
+              <div class="contact-icon-3d" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan);">
+                <i class="ri-mail-fill"></i>
+              </div>
+              <div class="contact-details-3d" data-tilt-layer="20">
+                <h4>Email Address</h4>
+                <p>kshitij.raj.96@gmail.com</p>
+                <div class="copy-hint-3d"><i class="ri-file-copy-line"></i> Click to copy email</div>
+              </div>
+            </div>
+
+            <div class="glass-card contact-card-3d" data-tilt>
+              <div class="contact-icon-3d" style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald);">
+                <i class="ri-map-pin-fill"></i>
+              </div>
+              <div class="contact-details-3d" data-tilt-layer="20">
+                <h4>Location</h4>
+                <p>Kolkata, West Bengal, India</p>
+                <div class="location-status"><span class="pulse-dot-green"></span> Open for Relocation / Remote</div>
+              </div>
+            </div>
+
+            <div class="glass-card contact-card-3d" data-tilt>
+              <div class="contact-icon-3d"
+                style="background: rgba(168, 85, 247, 0.15); color: var(--accent-secondary);">
+                <i class="ri-share-forward-fill"></i>
+              </div>
+              <div class="contact-details-3d" data-tilt-layer="20">
+                <h4>Online Presence</h4>
+                <div class="contact-links-row">
+                  <a href="https://linkedin.com/in/imkshitijraj" target="_blank" class="contact-pill-link"
+                    data-sound="click">
+                    <i class="ri-linkedin-fill"></i> LinkedIn
+                  </a>
+                  <a href="https://github.com/imkshitijraj" target="_blank" class="contact-pill-link"
+                    data-sound="click">
+                    <i class="ri-github-fill"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive 3D Form -->
+          <div class="glass-card contact-form-card-3d reveal-right" data-tilt>
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-br"></div>
+
+            <div class="form-header-3d" data-tilt-layer="15">
+              <i class="ri-mail-send-fill" style="color: var(--accent-primary);"></i>
+              <h3>Send Direct Message</h3>
+            </div>
+
+            <form id="contact-form" data-tilt-layer="25">
+              <div class="form-group">
+                <label class="form-label" for="name"><i class="ri-user-line"></i> Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Johnson" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email"><i class="ri-at-line"></i> Your Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. alex@company.com"
+                  required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="subject"><i class="ri-bookmark-line"></i> Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input"
+                  placeholder="e.g. Esports Event Collaboration / QA Contract" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message"><i class="ri-message-3-line"></i> Message</label>
+                <textarea id="message" name="message" class="form-textarea"
+                  placeholder="Describe your project, timeline, or requirements..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-3d" style="width: 100%;" data-sound="click">
+                <i class="ri-send-plane-fill"></i>
+                <span>Transmit Message</span>
+                <div class="btn-glow-layer"></div>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <div class="nav-logo-icon">
+            <img src="./assets/img/icon.png" alt="Kshitij Raj" class="nav-logo-img" />
+          </div>
+          <span>Kshitij Raj</span>
+        </a>
+        <p class="footer-tagline">Esports Operations • Gameplay QA • Project Coordinator</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/imkshitijraj" target="_blank" class="social-link" title="LinkedIn"><i
+            class="ri-linkedin-fill"></i></a>
+        <a href="https://github.com/imkshitijraj" target="_blank" class="social-link" title="GitHub"><i
+            class="ri-github-fill"></i></a>
+        <a href="mailto:kshitij.raj.96@gmail.com" class="social-link" title="Email"><i class="ri-mail-line"></i></a>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 Kshitij Raj. Engineered with 3D WebGL & CSS3. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </a>
+
+  <!-- 3D Modal System Overlay -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-header-title">
+    <div class="glass-card modal-container-3d" id="modal-container">
+      <!-- Modal Top Action Header Bar -->
+      <div class="modal-top-bar" id="modal-top-bar">
+        <div class="modal-title-wrap">
+          <span class="modal-badge-indicator" id="modal-badge-indicator">PORTFOLIO MODAL</span>
+          <h3 class="modal-header-title" id="modal-header-title">Curriculum Vitae</h3>
+        </div>
+        <div class="modal-actions-group">
+          <button type="button" class="modal-action-btn btn-print-cv" id="modal-print-btn" onclick="triggerPrintCV(event)" title="Print CV or Save as PDF">
+            <i class="ri-printer-line"></i>
+            <span>Print / PDF</span>
+          </button>
+          <button type="button" class="modal-close-3d" id="modal-close" onclick="closePortfolioModal(event)" aria-label="Close Modal" title="Close Modal (Esc)">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Content Body -->
+      <div class="modal-body-content" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Main 3D Interactive JavaScript Engine -->
+  <script src="./assets/js/main.js?v=2.4"></script>
 </body>
 
 </html>
