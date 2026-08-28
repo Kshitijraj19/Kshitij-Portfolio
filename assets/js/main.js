@@ -289,6 +289,7 @@ function getModalElements() {
     body: document.getElementById('modal-body'),
     close: document.getElementById('modal-close'),
     printBtn: document.getElementById('modal-print-btn'),
+    pdfLink: document.getElementById('modal-pdf-link'),
     title: document.getElementById('modal-header-title'),
     badge: document.getElementById('modal-badge-indicator')
   };
@@ -306,6 +307,7 @@ function openModal(html, title = 'Curriculum Vitae', badge = 'PORTFOLIO MODAL', 
   if (m.title) m.title.textContent = title;
   if (m.badge) m.badge.textContent = badge;
   if (m.printBtn) m.printBtn.style.display = showPrint ? 'inline-flex' : 'none';
+  if (m.pdfLink) m.pdfLink.style.display = showPrint ? 'inline-flex' : 'none';
 
   m.overlay.classList.add('active');
   document.body.style.overflow = 'hidden';
@@ -327,14 +329,27 @@ window.closePortfolioModal = function(e) {
   closeModal();
 };
 
+let isPrintingLock = false;
 window.triggerPrintCV = function(e) {
-  if (e && e.preventDefault) e.preventDefault();
+  if (e) {
+    if (e.preventDefault) e.preventDefault();
+    if (e.stopPropagation) e.stopPropagation();
+    if (e.stopImmediatePropagation) e.stopImmediatePropagation();
+  }
+  if (isPrintingLock) return;
+  isPrintingLock = true;
+
   if (window.cyberAudio) window.cyberAudio.playClick();
+  
   setTimeout(() => {
     try {
       window.print();
     } catch (err) {
       console.warn('Print command triggered:', err);
+    } finally {
+      setTimeout(() => {
+        isPrintingLock = false;
+      }, 1500);
     }
   }, 80);
 };
@@ -524,7 +539,7 @@ window.openCVModal = function(e) {
           <span>Education, Certifications & Honors</span>
         </div>
         <div class="cv-grid-dual">
-          <!-- Education Column -->
+          <!-- Academic Background Column -->
           <div class="cv-sub-card">
             <div class="cv-sub-card-title"><i class="ri-school-line" style="color: var(--accent-primary);"></i> Academic Background</div>
             <div style="margin-top: 0.35rem; display: flex; flex-direction: column; gap: 0.55rem;">

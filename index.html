@@ -42,7 +42,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
   <!-- Custom 3D Design System & Animations -->
-  <link rel="stylesheet" href="./assets/css/style.css?v=2.4" />
+  <link rel="stylesheet" href="./assets/css/style.css?v=2.6" />
 </head>
 
 <body>
@@ -152,9 +152,9 @@
                 <span>Explore Projects</span>
                 <div class="btn-glow-layer"></div>
               </a>
-              <button class="btn btn-glass btn-3d view-resume-btn" onclick="openCVModal()" data-sound="click">
+              <button type="button" class="btn btn-glass btn-3d view-resume-btn" onclick="openCVModal()" data-sound="click" title="View Curriculum Vitae">
                 <i class="ri-file-text-line"></i>
-                <span>View / Print CV</span>
+                <span>View CV</span>
               </button>
               <a href="#contact" class="btn btn-outline btn-3d" data-sound="click">
                 <i class="ri-send-plane-2-line"></i>
@@ -931,8 +931,8 @@
               </div>
 
               <div class="project-actions">
-                <a href="https://tint.edu.in/incubes" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm btn-3d"
-                  data-sound="click">
+                <a href="https://tint.edu.in/incubes" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary btn-sm btn-3d" data-sound="click">
                   <i class="ri-external-link-line"></i> Visit Live Site
                 </a>
                 <button type="button" class="btn btn-outline btn-sm btn-3d project-detail-btn" data-project="incubes"
@@ -1310,11 +1310,13 @@
           <h3 class="modal-header-title" id="modal-header-title">Curriculum Vitae</h3>
         </div>
         <div class="modal-actions-group">
-          <button type="button" class="modal-action-btn btn-print-cv" id="modal-print-btn" onclick="triggerPrintCV(event)" title="Print CV or Save as PDF">
-            <i class="ri-printer-line"></i>
-            <span>Print / PDF</span>
-          </button>
-          <button type="button" class="modal-close-3d" id="modal-close" onclick="closePortfolioModal(event)" aria-label="Close Modal" title="Close Modal (Esc)">
+          <a href="./kshitij_cv.pdf" target="_blank" rel="noopener noreferrer" class="modal-action-btn"
+            id="modal-pdf-link" title="Open Official CV Document (PDF)">
+            <i class="ri-file-pdf-line"></i>
+            <span>Official CV</span>
+          </a>
+          <button type="button" class="modal-close-3d" id="modal-close" aria-label="Close Modal"
+            title="Close Modal (Esc)">
             <i class="ri-close-line"></i>
           </button>
         </div>
@@ -1326,7 +1328,7 @@
   </div>
 
   <!-- Main 3D Interactive JavaScript Engine -->
-  <script src="./assets/js/main.js?v=2.4"></script>
+  <script src="./assets/js/main.js?v=2.7"></script>
 </body>
 
 </html>
